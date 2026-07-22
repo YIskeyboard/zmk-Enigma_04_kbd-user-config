@@ -210,9 +210,9 @@
 
         cursor {
             bindings = <
-           &kp LS(TAB)  &kp UP    &kp TAB    &kp TILDE  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
-&kp MINUS  &kp LEFT     &kp DOWN  &kp RIGHT  &kp N8     &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
-&kp EQUAL  &none        &none     &none      &kp SLASH  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
+           &kp LS(TAB)  &kp UP     &kp TAB    &kp TILDE  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
+&kp MINUS  &kp LEFT     &kp DOWN   &kp RIGHT  &kp N8     &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
+&kp EQUAL  &none        &kp LANG2  &kp LANG1  &kp SLASH  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
             >;
         };
 
@@ -226,9 +226,9 @@
 
         macro {
             bindings = <
-       &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none  &none  &none      &none
+&none  &none  &none  &none  &none  &none  &none  &none      &none       &none
+&none  &none  &none  &none  &none  &none  &none  &kp COMMA  &kp PERIOD  &kp SLASH
             >;
         };
 
