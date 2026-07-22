@@ -79,8 +79,8 @@ layers:
   - ''
   - '='
   - ''
-  - ''
-  - {type: held}
+  - LANG2
+  - {t: LANG1, type: held}
   - /
   - ''
   - ''
@@ -142,9 +142,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - ','
+  - .
+  - /
   setting:
   - BT CLR
   - ''
