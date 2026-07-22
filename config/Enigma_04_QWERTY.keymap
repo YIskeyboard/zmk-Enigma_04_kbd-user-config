@@ -1,9 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
@@ -172,170 +172,20 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <15 16>;
-            layers = <0 1 2 3 6 7 8 9>;
-        };
-
-        lt_backspace {
-            bindings = <&lt 1 BACKSPACE>;
-            key-positions = <6 7>;
-            layers = <0 1 2 3>;
-        };
-
         lt_delete {
             bindings = <&lt 3 DELETE>;
             key-positions = <5 7>;
             layers = <0 1 2 3>;
         };
 
-        lt_f2 {
-            bindings = <&lt 3 F2>;
-            key-positions = <0 2>;
-            layers = <0 1 2 3>;
-        };
-
-        td1 {
-            bindings = <&td1>;
-            key-positions = <0 1>;
-            layers = <0 1 2 3>;
-        };
-
-        td2 {
-            bindings = <&td2>;
-            key-positions = <1 2>;
-            layers = <0 1 2 3>;
-        };
-
-        copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <9 10>;
-            layers = <0 1 2 3 6 7 8 9>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <10 11>;
-            layers = <0 1 2 3 6 7 8 9>;
-        };
-
-        cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <9 11>;
-            layers = <0 1 2 3 6 7 8 9>;
-        };
-
-        select {
-            bindings = <&kp LC(A)>;
-            key-positions = <8 9>;
-            layers = <0 1 2 3>;
+        q {
+            bindings = <&kp Q>;
+            key-positions = <1 0>;
         };
 
         p {
             bindings = <&kp P>;
-            key-positions = <7 17>;
-            layers = <0>;
-        };
-
-        q {
-            bindings = <&kp Q>;
-            key-positions = <0 8>;
-            layers = <0>;
-        };
-
-        hyphen {
-            bindings = <&kp MINUS>;
-            key-positions = <4 5>;
-            layers = <0>;
-        };
-
-        atsign {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <13 14>;
-            layers = <0>;
-        };
-
-        ro {
-            bindings = <&kp INTERNATIONAL_1>;
-            key-positions = <23 24>;
-            layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <4 5>;
-            layers = <1>;
-        };
-
-        plus {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <13 14>;
-            layers = <1>;
-        };
-
-        equal {
-            bindings = <&kp KP_EQUAL>;
-            key-positions = <11 12>;
-            layers = <0 1>;
-        };
-
-        lshift {
-            bindings = <&Sft>;
-            key-positions = <8 18>;
-            layers = <0 1 2 3>;
-        };
-
-        rshift {
-            bindings = <&Sft>;
-            key-positions = <17 27>;
-            layers = <0 1 2 3>;
-        };
-
-        lctrl {
-            bindings = <&Ctl>;
-            key-positions = <18 19>;
-            layers = <0 1 2 3>;
-        };
-
-        rctrl {
-            bindings = <&Ctl>;
-            key-positions = <27 26>;
-            layers = <0 1 2 3>;
-        };
-
-        lwin {
-            bindings = <&WIN>;
-            key-positions = <19 20>;
-            layers = <0 1 2 3>;
-        };
-
-        rwin {
-            bindings = <&WIN>;
-            key-positions = <26 25>;
-            layers = <0 1 2 3>;
-        };
-
-        lalt {
-            bindings = <&ALT>;
-            key-positions = <20 18>;
-            layers = <0 1 2 3>;
-        };
-
-        ralt {
-            bindings = <&ALT>;
-            key-positions = <25 27>;
-            layers = <0 1 2 3>;
-        };
-
-        lsetting {
-            bindings = <&mo 5>;
-            key-positions = <20 21 22>;
-        };
-
-        rsetting {
-            bindings = <&mo 5>;
-            key-positions = <23 24 25>;
+            key-positions = <6 7>;
         };
     };
 
@@ -344,9 +194,9 @@
 
         default {
             bindings = <
-       &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I  &kp O
-&kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K  &kp L  &td4
-&kp Z  &kp X  &kp C  &lt 2 V    &td3  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+         &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I        &kp O
+&kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K        &kp L            &lt 6 ENTER
+&lt 5 Z  &lt 4 X  &lt 3 C  &lt 2 V  &lt 1 B  &lt 1 N  &lt 2 M  &lt 3 SPACE  &lt 4 BACKSPACE  &lt 5 ESC
             >;
         };
 
@@ -360,9 +210,9 @@
 
         cursor {
             bindings = <
-       &kp LS(TAB)     &kp UP          &kp TAB          &none  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
-&none  &kp LEFT        &kp DOWN        &kp RIGHT        &none  &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
-&none  &none           &none           &none            &none  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
+       &kp LS(TAB)  &kp UP    &kp TAB    &none  &none  &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN
+&none  &kp LEFT     &kp DOWN  &kp RIGHT  &none  &none  &kp END   &kp PAGE_DOWN  &kp UP           &none
+&none  &none        &none     &none      &none  &none  &none     &kp LEFT       &kp DOWN         &kp RIGHT
             >;
         };
 
