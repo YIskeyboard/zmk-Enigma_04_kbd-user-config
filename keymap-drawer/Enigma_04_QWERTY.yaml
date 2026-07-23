@@ -1,24 +1,24 @@
 layout: {zmk_keyboard: Enigma_04_QWERTY}
 layers:
   default:
-  - W
+  - {t: W, h: LEFT ALT}
   - E
   - R
   - T
   - Y
   - U
   - I
-  - O
-  - A
-  - S
+  - {t: O, h: RIGHT ALT}
+  - {t: A, h: Gui+LEFT SHIFT}
+  - {t: S, h: Ctl}
   - D
   - F
   - G
   - H
   - J
   - K
-  - L
-  - {t: ENTER, h: to_CTRL}
+  - {t: L, h: Ctl}
+  - {t: ENTER, h: RIGHT SHIFT}
   - {t: Z, h: setting}
   - {t: X, h: macro}
   - {t: C, h: symbol}
@@ -30,34 +30,34 @@ layers:
   - {t: BS, h: macro}
   - {t: ESC, h: setting}
   tenkey:
-  - Sft+TAB
-  - ↑
-  - TAB
-  - ''
-  - /
+  - Sft+/
   - '7'
   - '8'
   - '9'
-  - ''
-  - ←
-  - ↓
-  - →
-  - ''
+  - '{'
+  - '&'
   - '*'
+  - (
+  - ''
+  - KP MULTIPLY
   - '4'
   - '5'
   - '6'
+  - '}'
+  - $
+  - '%'
+  - ^
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - .
   - '0'
   - '1'
   - '2'
-  - '3'
-  - .
+  - {t: '3', type: held}
+  - )
+  - '!'
+  - '@'
+  - '#'
+  - INT YEN
   cursor:
   - Sft+TAB
   - ↑
@@ -174,35 +174,7 @@ layers:
   - ''
   - Reset
   - Boot
-  to_CTRL:
-  - Sft+TAB
-  - ↑
-  - TAB
-  - ''
-  - ''
-  - HOME
-  - PgUp
-  - ''
-  - ''
-  - ←
-  - ↓
-  - →
-  - ''
-  - ''
-  - END
-  - PgDn
-  - ↑
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ←
-  - ↓
-  - →
+  to_CTRL: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_SHIFT: ['', ↑, '', '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_WIN: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, '', '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
   to_ALT: [Sft+TAB, ↑, TAB, '', '', HOME, PgUp, Prt Scn, '', ←, ↓, →, '', '', END, PgDn, ↑, '', '', '', '', '', '', '', '', ←, ↓, →]
