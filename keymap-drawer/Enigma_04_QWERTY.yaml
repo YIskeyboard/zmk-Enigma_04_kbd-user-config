@@ -131,10 +131,8 @@ combos:
   a: right
 - p: [11, 12]
   k: SPACE
-- p: [13, 14]
-  k: BS
 - p: [15, 16]
-  k: ENTER
+  k: BS
 - p: [1, 2]
   k: LANG2
 - p: [5, 6]
