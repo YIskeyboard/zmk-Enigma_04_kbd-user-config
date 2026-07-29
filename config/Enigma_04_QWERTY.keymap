@@ -217,7 +217,7 @@
         tenkey {
             bindings = <
            &kp LS(SLASH)  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp LEFT_BRACE         &kp AMPS         &kp ASTRK    &kp LEFT_PARENTHESIS
-&kp MINUS  &kp ASTERISK   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp RIGHT_BRACE        &kp DOLLAR       &kp PERCENT  &kp CARET             &none
+&kp MINUS  &kp ASTERISK   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp RIGHT_BRACE        &kp DOLLAR       &kp PERCENT  &kp CARET             &kp SEMICOLON
 &kp EQUAL  &kp KP_N0      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT       &kp HASH              &kp INT_YEN
             >;
         };
