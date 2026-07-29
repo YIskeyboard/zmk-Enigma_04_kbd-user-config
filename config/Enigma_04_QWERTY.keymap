@@ -208,9 +208,9 @@
 
         default {
             bindings = <
-                      &mt LEFT_ALT W  &kp E  &kp R    &kp T    &kp Y    &kp U    &kp I      &mt RIGHT_ALT O
-&mt LG(LEFT_SHIFT) A  &mt LCTRL S     &kp D  &kp F    &kp G    &kp H    &kp J    &kp K      &mt RCTRL L      &mt RIGHT_SHIFT ENTER
-&lt 5 Z               &kp X           &kp C  &lt 2 V  &lt 1 B  &lt 1 N  &lt 2 M  &kp COMMA  &kp PERIOD       &lt 5 ESC
+                      &mt LEFT_ALT W  &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I        &mt RIGHT_ALT O
+&mt LG(LEFT_SHIFT) A  &mt LCTRL S     &kp D    &kp F    &kp G    &kp H    &kp J    &kp K        &mt RCTRL L      &mt RIGHT_SHIFT ENTER
+&lt 5 Z               &lt 4 X         &lt 3 C  &lt 2 V  &lt 1 B  &lt 1 N  &lt 2 M  &lt 3 COMMA  &lt 4 PERIOD     &lt 5 SLASH
             >;
         };
 
