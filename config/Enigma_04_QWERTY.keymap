@@ -172,12 +172,6 @@
     combos {
         compatible = "zmk,combos";
 
-        lt_delete {
-            bindings = <&lt 3 DELETE>;
-            key-positions = <5 7>;
-            layers = <0 1 2 3>;
-        };
-
         q {
             bindings = <&kp Q>;
             key-positions = <1 0>;
@@ -187,6 +181,31 @@
             bindings = <&kp P>;
             key-positions = <6 7>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <11 12>;
+        };
+
+        backsapce {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <13 14>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <15 16>;
+        };
+
+        us {
+            bindings = <&kp LANG2>;
+            key-positions = <1 2>;
+        };
+
+        JP {
+            bindings = <&kp LANG1>;
+            key-positions = <5 6>;
+        };
     };
 
     keymap {
@@ -194,9 +213,9 @@
 
         default {
             bindings = <
-                      &mt LEFT_ALT W  &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I        &mt RIGHT_ALT O
-&mt LG(LEFT_SHIFT) A  &mt LCTRL S     &kp D    &kp F    &kp G    &kp H    &kp J    &kp K        &mt RCTRL L      &mt RIGHT_SHIFT ENTER
-&lt 5 Z               &lt 4 X         &lt 3 C  &lt 2 V  &lt 1 B  &lt 1 N  &lt 2 M  &lt 3 SPACE  &lt 4 BACKSPACE  &lt 5 ESC
+                      &mt LEFT_ALT W  &kp E  &kp R    &kp T    &kp Y    &kp U    &kp I      &mt RIGHT_ALT O
+&mt LG(LEFT_SHIFT) A  &mt LCTRL S     &kp D  &kp F    &kp G    &kp H    &kp J    &kp K      &mt RCTRL L      &mt RIGHT_SHIFT ENTER
+&lt 5 Z               &kp X           &kp C  &lt 2 V  &lt 1 B  &lt 1 N  &lt 2 M  &kp COMMA  &kp PERIOD       &lt 5 ESC
             >;
         };
 
@@ -226,9 +245,9 @@
 
         macro {
             bindings = <
-       &none  &none  &none  &none  &none  &none  &none      &none
-&none  &none  &none  &none  &none  &none  &none  &none      &none       &none
-&none  &none  &none  &none  &none  &none  &none  &kp COMMA  &kp PERIOD  &kp SLASH
+       &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
