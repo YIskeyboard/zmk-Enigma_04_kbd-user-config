@@ -20,15 +20,15 @@ layers:
   - {t: L, h: Ctl}
   - {t: ENTER, h: RIGHT SHIFT}
   - {t: Z, h: setting}
-  - X
-  - C
+  - {t: X, h: macro}
+  - {t: C, h: symbol}
   - {t: V, h: cursor}
   - {t: B, h: tenkey}
   - {t: N, h: tenkey}
   - {t: M, h: cursor}
-  - ','
-  - .
-  - {t: ESC, h: setting}
+  - {t: ',', h: symbol}
+  - {t: ., h: macro}
+  - {t: /, h: setting}
   tenkey:
   - Sft+/
   - '7'
@@ -87,8 +87,64 @@ layers:
   - ←
   - ↓
   - →
-  symbol: ['', '', '', '', F1, F2, F3, F4, Sft+1, Sft+2, Sft+3, Sft+4, Sft+5, F5, F6, F7, F8, '', Sft+6, Sft+7, Sft+8, Sft+9, Sft+0, F9, F10, F11, F12, '']
-  macro: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  symbol:
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - Sft+6
+  - Sft+7
+  - {t: Sft+8, type: held}
+  - Sft+9
+  - Sft+0
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  macro:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   setting:
   - BT CLR
   - ''
