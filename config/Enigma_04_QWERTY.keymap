@@ -189,11 +189,6 @@
 
         backsapce {
             bindings = <&kp BACKSPACE>;
-            key-positions = <13 14>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
             key-positions = <15 16>;
         };
 
