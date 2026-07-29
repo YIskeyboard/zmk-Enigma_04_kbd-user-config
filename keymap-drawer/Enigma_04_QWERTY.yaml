@@ -129,7 +129,7 @@ combos:
 - p: [6, 7]
   k: P
   a: right
-- p: [11, 12]
+- p: [9, 10]
   k: SPACE
 - p: [15, 16]
   k: BS
